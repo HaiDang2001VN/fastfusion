@@ -17,7 +17,6 @@ addons:
       - gcc-6
       - g++-6
       - libboost-all-dev
-      - libpthread-stubs0-dev
       - libeigen3-dev
       - libglew-dev
       - libglfw-dev
@@ -29,7 +28,7 @@ before_install:
   - export CXX=/usr/bin/g++-6
 
 install:
-  - sudo apt-get install libqglviewer-dev qt4-dev-tools libopencv-dev python-opencv
+  - sudo apt-get install libqglviewer-dev qt4-dev-tools libopencv-dev
 
 before_script:
   - sudo find ${ROOT}/usr/lib/x86_64-linux-gnu -name libQGLViewer.so
@@ -39,6 +38,7 @@ script:
   - make
 
 after_success:
+  - cp ${ROOT}/usr/lib/x86_64-linux-gnu/libQGLViewer.so $PWD/lib
   - zip -r -9 Release bin lib src
 
 before_deploy:
