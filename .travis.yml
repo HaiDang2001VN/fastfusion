@@ -16,7 +16,7 @@ addons:
     packages:
       - gcc-6
       - g++-6
-      - libboost-dev
+      - libboost-all-dev
       - libpthread-stubs0-dev
       - libeigen3-dev
       - libglew-dev
