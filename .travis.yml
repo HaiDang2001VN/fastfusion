@@ -32,16 +32,13 @@ install:
   - sudo apt-get install libqglviewer-dev qt4-dev-tools libopencv-dev python-opencv
 
 before_script:
-  - mkdir build
-  - cd build
+  - cmake .
 
 script:
-  - cmake ..
   - make
 
 after_success:
-  - cd ..
-  - zip -r release.zip
+  - zip release.zip
 
 before_deploy:
   - git config --local user.name HaiDang2001VN
