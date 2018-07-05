@@ -40,7 +40,7 @@ script:
   - make
 
 after_success:
-  - cd ../..
+  - cd ..
   - zip -r release.zip
 
 before_deploy:
