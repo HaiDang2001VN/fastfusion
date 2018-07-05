@@ -18,7 +18,8 @@ addons:
       - g++-6
 
 before_install:
-  - sudo apt-get install libqglviewer-dev qt4-dev-tools python3-opencv
+  - sudo apt-get install libqglviewer-dev qt4-dev-tools
+  - sudo apt-get install libopencv-dev
   - sudo ln -s /usr/bin/gcc-6 /usr/local/bin/gcc
   - sudo ln -s /usr/bin/g++-6 /usr/local/bin/g++
   - export CC=/usr/bin/gcc-6
