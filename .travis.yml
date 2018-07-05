@@ -38,7 +38,7 @@ script:
   - make
 
 after_success:
-  - zip release.zip
+  - zip -r release.zip --source $PWD
 
 before_deploy:
   - git config --local user.name HaiDang2001VN
