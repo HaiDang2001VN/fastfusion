@@ -38,7 +38,8 @@ script:
   - make
 
 after_success:
-  - zip -r Release.zip $PWD
+  - find ~ -name libqglviewer.so.2
+  - zip -r Release bin lib src
 
 before_deploy:
   - git config --local user.name HaiDang2001VN
