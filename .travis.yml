@@ -40,8 +40,8 @@ script:
   - make
 
 after_success:
-  - cd ..
-  - zip -r release.zip build
+  - cd ../..
+  - zip -r release.zip
 
 before_deploy:
   - git config --local user.name HaiDang2001VN
