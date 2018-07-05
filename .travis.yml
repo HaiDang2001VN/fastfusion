@@ -32,13 +32,13 @@ install:
   - sudo apt-get install libqglviewer-dev qt4-dev-tools libopencv-dev python-opencv
 
 before_script:
+  - sudo find ~ -name libqglviewer.so
   - cmake .
 
 script:
   - make
 
 after_success:
-  - find ~ -name libqglviewer.so.2
   - zip -r Release bin lib src
 
 before_deploy:
