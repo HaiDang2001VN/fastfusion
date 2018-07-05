@@ -50,7 +50,7 @@ deploy:
   api_key:
       secure: "Kco6ZHjEiO0OQp+4XZO+dcHX0n4uNihe2/TATl8MLRerbYNbgcteExWir3REtR3TOA0K228QzbApNw0azY8mEgcus0YWEGnOZctDOAtb5KWlSdCbVTcRAKiwfcR8SYE37aEaLNiap/ktSFf1v42qyvuLA6vAdxLzitOZZWKjijp3TcAahWB8v55f9luivbqA0zzSXTdr+nohKuuwHfCtqOvdyHlZeR29A3etQb2Q5iA/ouqucDSFdvB1W9qIlaXwb8O4jVji46370GMkTeVJpaqyomfpfsvy+iHBX+OnTzVKDEseD5Td87gWeVgUTMAq090CcG6DOQXi6Bs/KIMNgnKQBDFUHeHEudpDWETkN3oauXQ+s4m+PxQwZrkZHbmyBiuBko0n8ORsveAqRUa3bn9dkD1l9vYME4P5H16MUt3LojIHb0gXV4V0ScmmD+Ok4lEpwDlex8XbG6wgFR7gRul168GqHhn162RO6/UgMStCdYpTk391MkmUIXVjn+v12fjFEotRzpwDM5k/p/VADW3gCTGzb0r0C4Nld8zezhwguvErSpbolR44lLoqF+K5cCz2yY/KqF55aNecyLQ6ENn95FdGhbGYpfOt2kn7UTscPwQRG40LKnB4Ta4XG+UvDOQ8HltliibQzB9GyK8fThdO1qI8pbJht1hDE4m3o/M="
   file_glob: true
-  file: "release.zip"
+  file: "Release.zip"
   skip_cleanup: true
   overwrite: true
   on:
