@@ -38,8 +38,7 @@ script:
   - make
 
 after_success:
-  - find / -name onlinefusion
-  - zip -r release.zip $PWD
+  - zip -r Release.zip $PWD
 
 before_deploy:
   - git config --local user.name HaiDang2001VN
