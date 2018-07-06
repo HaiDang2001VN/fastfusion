@@ -1,5 +1,7 @@
 Fork from [TUM-VISION](https://github.com/tum-vision/fastfusion)
+
 For built binaries with [Travis-CI](https://travis-ci.org/HaiDang2001VN/fastfusion/builds)
+
 Please note that this prebuilt only work on Ubuntu 14.04 (Trusty) until now (some issues with g++-5 package on Xenial (16.04), as Trusty prebuilt with g++-6; the libQGLViewer has changed in Bionic (18.04) and didn't linked)
 
 Fastfusion
