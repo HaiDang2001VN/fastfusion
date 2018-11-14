@@ -21,6 +21,7 @@ addons:
       - libglew-dev
       - libglfw-dev
       - freeglut3-dev
+      - qtcreator
 before_install:
   - sudo ln -s /usr/bin/gcc /usr/local/bin/gcc
   - sudo ln -s /usr/bin/g++ /usr/local/bin/g++
