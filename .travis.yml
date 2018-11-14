@@ -15,7 +15,7 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - gcc
-      - g++-
+      - g++
       - libboost-all-dev
       - libeigen3-dev
       - libglew-dev
@@ -23,9 +23,9 @@ addons:
       - freeglut3-dev
 before_install:
   - sudo ln -s /usr/bin/gcc /usr/local/bin/gcc
-  - sudo ln -s /usr/bin/g++- /usr/local/bin/g++
+  - sudo ln -s /usr/bin/g++ /usr/local/bin/g++
   - export CC=/usr/bin/gcc
-  - export CXX=/usr/bin/g++-
+  - export CXX=/usr/bin/g++
 
 install:
   - sudo apt-get install libqglviewer-dev qt4-dev-tools libopencv-dev
