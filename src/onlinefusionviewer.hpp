@@ -9,10 +9,12 @@
 #define ONLINEFUSIONVIEWER_HPP_
 
 #include <QGLViewer/qglviewer.h>
+#ifndef Q_MOC_RUN
 #include <camerautils/camerautils.hpp>
 //#include <fusionGPU/geometryfusion_single_aos.hpp>
 #include <fusion/geometryfusion_mipmap_cpu.hpp>
 #include <fusion/mesh.hpp>
+#endif
 #include <QtCore/QTimer>
 
 class OnlineFusionViewerManipulated : public QGLViewer
